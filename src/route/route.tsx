@@ -1,18 +1,17 @@
 // src/routes.tsx
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-// import Home from './pages/Home';
-// import About from './pages/About';
-// import NotFound from './pages/NotFound';
+import { HomeView } from "@/views/home";
+import { LayoutBlog } from "@/views/blog";
 
 // 路由配置
 const router = createBrowserRouter([
   {
-    path: "/",
-    // element: <Home />,
+    path: "/blog-chakra",
+    element: <HomeView />,
   },
   {
-    path: "/about",
-    // element: <About />,
+    path: "/blog-layout",
+    element: <LayoutBlog />,
   },
   {
     path: "*", // 通配符，匹配未定义的路径
