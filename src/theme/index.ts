@@ -6,6 +6,7 @@ const theme = extendTheme({
       'html, body': {
         fontFamily: 'Noto Sans SC, sans-serif', // 设置全局字体
       },
+      
     },
   },
 });

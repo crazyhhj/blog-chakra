@@ -1,6 +1,7 @@
 import React from "react";
-import { Box, Flex, Heading, Text, Button } from "@chakra-ui/react";
+import { Box, Flex, Heading, Text, Button, AspectRatio, Image } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
+import kai from "@/asset/lk-AI.png" 
 export function HomeView() {
   const navigate = useNavigate();
 
@@ -21,11 +22,15 @@ export function HomeView() {
           Welcome to My Blog
         </Heading>
         <Text mb={4}>
-          This is a simple layout using Chakra UI. Feel free to explore!
+            跟随老凯AI进行博客构建
         </Text>
-        <Button colorScheme="teal" onClick={jumpToBlog}>
-          Get Started
+        <Box mb={4}>
+            <Button colorScheme="teal" onClick={jumpToBlog}>Get Started
         </Button>
+        </Box>
+            <AspectRatio minW="200px" ratio={4/3}>
+                <Image src={kai}/>
+            </AspectRatio>
       </Box>
     </Flex>
   );
